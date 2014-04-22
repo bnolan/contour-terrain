@@ -1,0 +1,23 @@
+{
+  "name": "contoured-terrain",
+  "version": "1.0.0",
+  "description": "Generate contoured terrains using Mikola Lysenkos surface-nets",
+  "dependencies": {
+    "ndarray-extract-contour": "^1.0.0",
+    "triangulate-hypercube": "^0.0.0",
+    "zero-crossings": "^1.0.0",
+    "planar-dual": "*",
+    "noisejs": "*",
+    "surface-nets": "*",
+    "ndarray": "*",
+    "ndarray-fill": "~0.1.0"
+  },
+  "scripts": {
+    "start": "node generator.js",
+    "server" : "ruby -run -e httpd . -p 9070"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "bnolan@gmail.com"
+}

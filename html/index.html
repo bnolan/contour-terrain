@@ -137,9 +137,9 @@
 
         $.ajax({
           url : '../terrains/default.json',
-          success : function(responseText){
-            var polygons = JSON.parse(responseText),
-              multiplier = 1.0;
+          dataType : 'json',
+          success : function(polygons){
+            var multiplier = 1.0;
 
             polygons.forEach(function(polygon){
               var points = polygon.map(function(vector){

@@ -136,7 +136,7 @@
         scene.add(floor)
 
         $.ajax({
-          url : '/terrains/default.json',
+          url : '../terrains/default.json',
           success : function(responseText){
             var polygons = JSON.parse(responseText),
               multiplier = 1.0;
